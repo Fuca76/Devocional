@@ -15,19 +15,41 @@
             background-size: cover;
         }
         main{
-            background-color: rgba(96, 170, 96, 0.535);
+         background-color: rgba(96, 170, 96, 0.535);
           max-width: 800px;
           padding: 10px;
-          margin: auto;
+          margin:left;
           border-radius: 15px;
         }
             h1{
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 text-align: center;
             }
+            h2{
+                color: rgba(49, 208, 17, 0.837);
+                font: normal  bold 30pt Verdana;
+                text-align: justify;
+            }
             footer{
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 text-align: center;
+            }
+            div.video{
+                margin: 1px -20px 1px -20px;
+                padding: 20px;
+                padding-bottom: 30%;
+            }
+            div.video > iframe{
+            position:absolute;
+            top: 20%;
+            right: 10%;
+            width: 40%;
+            height: 40%;
+            }
+            div.conversa{
+                position: absolute;
+                top: 75%;
+                right: 20%;
             }
     </style>
 </head>
@@ -59,7 +81,37 @@
                 
             </br>
             </p>
-    </main>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/aDFBlY0FPiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="conversa">
+            <h2>Fale conosco</h2>
+            <form target="_blank"  action="https://formsubmit.co//fulldesenvolvedora76@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://fuca76.github.io/Devocional/sucesso.html"/>
+                <input type="hidden" name="_autoresponse" value="Recebemos sua Mensagem,obrigada pelo contato!">
+                <div
+                class="form-group">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" name="name"
+            class="form-control" placeholder="Nome" required
+            >
+                </div>
+                <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            </div>
+            <div class="form-group"
+        >
+    <textarea placeholder="Deixe sua Mensagem!" class="form-control" name="message"  cols="40" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block
+    ">Enviar
+
+    </button>
+            </form>
+        </div>
+    </main> 
+   
 <footer><strong>Taís Carvalho 27/10/2021</strong></footer>
 </body>
 </html>
